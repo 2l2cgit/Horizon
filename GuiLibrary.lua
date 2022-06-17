@@ -144,8 +144,7 @@ end
 local function getasset(path)
 	--[[if not betterisfile(path) then
 		local req = requestfunc({
-			Url = "https://raw.githubusercontent.com/2l2cgit
-            /Horizon/main/"..path:gsub("Horizon/assets", "assets"),
+			Url = "https://raw.githubusercontent.com/2l2cgit/Horizon/main/"..path:gsub("Horizon/assets", "assets"),
 			Method = "GET"
 		})
         print("[Horizon] downloading "..path.." asset.")
