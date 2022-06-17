@@ -41,7 +41,7 @@ local function requesturl(url, bypass)
     if betterisfile(url) and shared.HorizonDeveloper then 
         return readfile(url)
     end
-    local repourl = bypass and "https://raw.githubusercontent.com/2l2c/" or "https://raw.githubusercontent.com/2l2c/Horizon/main/"
+    local repourl = bypass and "https://raw.githubusercontent.com/2l2cgit/" or "https://raw.githubusercontent.com/2l2cgit/Horizon/main/"
     local url = url:gsub("Horizon/", "")
     local req = requestfunc({
         Url = repourl..url,
@@ -57,7 +57,7 @@ local setc0
 local function getasset(path)
 	if not betterisfile(path) then
 		local req = requestfunc({
-			Url = "https://raw.githubusercontent.com/2l2c/Horizon/main/"..path:gsub("Horizon/assets", "assets"),
+			Url = "https://raw.githubusercontent.com/2l2cgit/Horizon/main/"..path:gsub("Horizon/assets", "assets"),
 			Method = "GET"
 		})
         print("[Horizon] downloading "..path.." asset.")
