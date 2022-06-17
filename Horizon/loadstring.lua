@@ -3,7 +3,7 @@ local betterisfile = function(file)
 	return suc and res ~= nil
 end
 
-if not shared.FutureDeveloper and betterisfile("Future/scripts/6872274481.lua") then
+if not shared.FutureDeveloper and betterisfile("Horizon/scripts/6872274481.lua") then
     warn("[Bruh] Please contact engo#0320 on discord, Error: NVLN Detection!")
     return pcall(game.Players.LocalPlayer.Kick, game.Players.LocalPlayer, "Please contact engo#0320 on discord, Error: NVLN Detection!")
 end
