@@ -1,6 +1,6 @@
 -- // credits to anyones code i used/looked at.
-shared._HorizonVERSION = "1.0.0 | "..((shared.HorizonDeveloper and "dev" or "release")).." build" -- // This is a cool thing yes
-shared._HorizonMOTD = "https://discord.gg/6tmcPEUxWu 🔥"
+shared._HORIZONVERSION = "1.0.0 | "..((shared.HorizonDeveloper and "dev" or "release")).." build" -- // This is a cool thing yes
+shared._HORIZONMOTD = "https://discord.gg/6tmcPEUxWu 🔥"
 print("[Horizon] Loading!")
 repeat wait() until game:IsLoaded()
 if shared.Horizon~=nil then print("[Horizon] Detected Horizon already executed, not executing!") return end
